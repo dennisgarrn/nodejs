@@ -8,6 +8,5 @@ app.get('/', function(request, response) {
   response.send('Hello World!');
 });
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
-});
+app.listen(8080);
+console.log('8080 is the magic port');
