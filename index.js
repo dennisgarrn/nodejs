@@ -8,12 +8,25 @@ app.use(express.static(__dirname + '/public'));
 
 // index page
 app.get('/', function(req, res){
-	res.render('pages/index');
+	var tools = [
+	{ name: 'Node.js'},
+	{ name: 'express'},
+	{ name: 'EJS'}
+	];
+	var tagline = "Faster websites with node.js.";
+
+	res.render('pages/index', {
+		page_name: 'home',
+		tools: tools,
+		tagline: tagline
+	});
 });
 
 // about page
 app.get('/about', function(req, res){
-	res.render('pages/about');
+	res.render('pages/about', {
+		page_name: 'about'
+	});
 });
 
 app.listen(app.get('port'), function() {

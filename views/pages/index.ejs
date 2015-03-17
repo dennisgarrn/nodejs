@@ -11,6 +11,14 @@
 		<div class="jumbotron">
 			<p>YAAAAY, this site was build with node.js</p>
 		</div>
+		<h2>Variable</h2>
+		<p><%= tagline %></p>
+		<h2>Loop</h2>
+		<ul>
+			<% tools.forEach(function(tool) { %>
+			<li><%= tool.name %></li>
+			<% }); %>
+		</ul>
 	</main>
 	<footer>
         <% include ../partials/footer %>
