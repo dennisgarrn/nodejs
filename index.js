@@ -11,7 +11,8 @@ app.use(express.static(__dirname + '/views/pages'));
 
 // index page
 app.get('/', function(req, res){
-	res.render('pages/index');
+	response.send('Hello World!');
+	//res.render('pages/index');
 });
 
 // about page
