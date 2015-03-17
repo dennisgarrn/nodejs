@@ -5,7 +5,7 @@ var app = express();
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/views/pages'));
 
 // use res.render to load up an ejs view file
 
