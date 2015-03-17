@@ -1,5 +1,5 @@
 {
-  "name": "node-js",
+  "name": "node-js-getting-started",
   "version": "0.1.2",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
@@ -21,10 +21,5 @@
     "heroku",
     "express"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/heroku/node-js-getting-started/issues"
-  },
-  "homepage": "https://github.com/heroku/node-js-getting-started",
-  "author": "Dennis"
+  "license": "MIT"
 }
