@@ -1,13 +1,22 @@
-var express = require('express');
+// server.js
+// load the things we need
+var express =require('express');
 var app = express();
 
-app.set('port', (process.env.PORT || 5000));
-app.use(express.static(__dirname + '/public'));
+// set the view engine to ejs
+app.set('view engine', 'ejs');
 
-app.get('/', function(request, response) {
-  response.send('Hello World!');
+// use res.render to load up an ejs view file
+
+// index page
+app.get('/', function(req, res){
+	res.render('pages/index');
 });
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
+// about page
+app.get('/about', function(req, res){
+	res.render('pages/about');
 });
+
+app.listen(8080);
+console.log('8080 is the magic port');
