@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Super Awesome Page</title>
+	<base href="/">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/material.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+	<!-- own Stylesheet -->
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="container" ng-app="routerApp" ng-controller="mainCtrl as main">
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Nodejs is working!</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div ng-view class="well"></div>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.js"></script>
+	<!-- own JS scripts -->
+	<script src="/js/app.js"></script>
+	<script src="/js/app.routes.js"></script>
+	<footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body { padding-top: 50px; }
+main { position: relative; }
+.ng-enter, .ng-leave { width: 100%; position: absolute; }
+.ng-enter {
+	-webkit-animation: bounceInDown 1.0s both ease-in;
+	-moz-animation: bounceInDown 1.0s both ease-in;
+	animation: bounceInDown 1.0s both ease-in;
+}
+.ng-leave {
+	-webkit-animation: bounceOutUp 0.8s both ease-in;
+	-moz-animation: bounceOutUp 0.8s both ease-in;
+	animation: bounceOutUp 0.8s both ease-in;
+}
