@@ -10,5 +10,5 @@ app.get('*', function(req, res){
 	res.sendFile(path.join(__dirname + '/public/views/pages/index.html'));
 });
 
-app.listen(5000);
+app.listen(8080);
 console.log('This port is better than yours');
