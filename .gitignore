@@ -1,2 +1,3 @@
 # Ignore native extensions in the node_modules folder (things changed by npm rebuild)
 node_modules/*
+.DS\_Store
